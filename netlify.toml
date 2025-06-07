@@ -1,0 +1,10 @@
+[build]
+  # This tells Netlify what command to run when building your project
+  command = "bash ./scripts/build.sh"
+  
+  # This is where your built Flutter web files will be found and served from
+  publish = "build/web"
+
+[context.production.environment]
+  # Optional: Flutter channel can be set here
+  FLUTTER_CHANNEL = "stable"
